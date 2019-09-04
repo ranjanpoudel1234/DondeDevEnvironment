@@ -24,6 +24,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "public_network", ip:"192.168.1.17"
 
   config.vm.provision :docker
+  config.vm.provision :docker_compose
   # config.vm.provision :docker_compose, yml: "/vagrant/docker-compose.yml", rebuild:true, run: "always" #to install and run docker-compose on vagrant up.
   
   # Disable automatic box update checking. If you disable this, then
