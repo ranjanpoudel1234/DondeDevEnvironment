@@ -5,7 +5,7 @@ services:
 
   postgres:
     container_name: "postgres"
-    image: postgres
+    image: mdillon/postgis
     restart: always
     ports:
       - 5432:5432
